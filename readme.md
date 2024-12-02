@@ -70,7 +70,7 @@ export class UserService {
 }
 ```
 
-###Contact For any questions or issues, please reach out to the author:
+### Contact For any questions or issues, please reach out to the author:
 
 -   Hoang Cong Nhut Vy
 -   [GitHub Profile](https://github.com/vyhcn3012)
