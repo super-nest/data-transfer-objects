@@ -47,7 +47,7 @@ export class AppModule {}
 @super-nest or `ApiProperty` if you only get metadata.
 
 ```ts
-import { MetadataDTO } from '@super-nest/data-transfer-objects';
+import { SuperApiProperty, SuperDTO } from '@super-nest/data-transfer-objects';
 
 @SuperDTO()
 export class CreateUserDto {
@@ -106,8 +106,7 @@ nested DTOs seamlessly with `@SuperDTO`. Below is an example illustrating how to
 handle nested structures like `SEOTagDto`. **Step 1: Import the Module**
 
 ```ts
-import { SuperDTO } from '@super-nest/data-transfer-objects';
-import { SuperApiProperty } from '@super-nest/data-transfer-objects/decorators';
+import { SuperDTO, SuperApiProperty } from '@super-nest/data-transfer-objects';
 
 @SuperDTO()
 export class SEOTagDto {
@@ -132,8 +131,7 @@ includes the nested SEOTagDto as a property. The library will automatically
 handle the nested structure and metadata.
 
 ```ts
-import { SuperDTO } from '@super-nest/data-transfer-objects';
-import { SuperApiProperty } from '@super-nest/data-transfer-objects/decorators';
+import { SuperDTO, SuperApiProperty } from '@super-nest/data-transfer-objects';
 import { Type } from 'class-transformer';
 import { ValidateNested, IsOptional } from 'class-validator';
 import { SEOTagDto } from './seo-tag.dto';
