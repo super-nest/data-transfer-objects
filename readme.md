@@ -80,7 +80,7 @@ export class UserService {
         const dtoMetadata = await this.dtoService.findOne(CreateUserDto.name);
         // Use dtoMetadata as needed
         // {
-        //     "name": "CreatePostDto",
+        //     "name": "CreateUserDto",
         //     "form": {
         //         "name": {
         //             "title": "name",
