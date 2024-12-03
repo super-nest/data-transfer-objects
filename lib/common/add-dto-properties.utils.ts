@@ -2,7 +2,7 @@ import { DECORATORS } from '@nestjs/swagger/dist/constants';
 import { DTOMetadataStorage } from '../storages/data-transfer-objects.storage';
 import {
     DTOMetadata,
-    DTOMetadataForm,
+    SuperApiPropertyOptions,
 } from '../metadata/data-transfer-objects.interface';
 import { isClass } from './is-class.utils';
 
@@ -13,7 +13,7 @@ export const addDtoProperties = (dto: new () => any) => {
             dto.prototype,
         ) || [];
 
-    const form: DTOMetadataForm = {};
+    const form: SuperApiPropertyOptions = {};
     for (const property of properties) {
         const [, propertyKey] = property.split(':');
 
@@ -21,7 +21,7 @@ export const addDtoProperties = (dto: new () => any) => {
             DECORATORS.API_MODEL_PROPERTIES,
             dto.prototype,
             propertyKey,
-        ) as DTOMetadataForm;
+        ) as SuperApiPropertyOptions;
 
         form[propertyKey] = {
             title: propertyData?.title || propertyKey,
