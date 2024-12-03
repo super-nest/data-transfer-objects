@@ -4,8 +4,8 @@ import { DataTransferObjectService } from './data-transfer-object.service';
 @Module({
     imports: [],
     controllers: [],
-    providers: [DataTransferObjectService],
-    exports: [DataTransferObjectService],
+    providers: [],
+    exports: [],
 })
 export class DataTransferObjectModule {
     static forRoot(): DynamicModule {

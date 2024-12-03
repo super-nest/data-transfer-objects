@@ -1,6 +1,6 @@
 {
     "name": "@super-nest/data-transfer-objects",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Get data transfer objects for your nestjs project",
     "author": "Hoang Cong Nhut Vy",
     "repository": "https://github.com/super-nest/data-transfer-objects.git",
