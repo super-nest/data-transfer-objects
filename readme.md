@@ -30,8 +30,7 @@ $ npm install @super-nest/data-transfer-objects @nestjs/swagger
 
 ### Usage
 
-**Step 1: Import the Module** Create your DTOs using the MetadataDTO decorator.
-This decorator will automatically register the metadata for your DTO.
+**Step 1: Import the Module**
 
 ```ts
 import { Module } from '@nestjs/common';
@@ -43,7 +42,7 @@ import { DataTransferObjectModule } from '@super-nest/data-transfer-objects';
 export class AppModule {}
 ```
 
-**Step 2: Define Your DTOs** Use can use `SuperApiProperty` to fit with
+**Step 2: Define Your DTOs** You can use `SuperApiProperty` to fit with
 @super-nest or `ApiProperty` if you only get metadata.
 
 ```ts

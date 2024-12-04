@@ -6,11 +6,11 @@ import { DTOMetadataStorage } from './storages/data-transfer-objects.storage';
 export class DataTransferObjectService {
     private readonly dTOMetadataStorage = DTOMetadataStorage;
 
-    async findOne(name: string) {
+    findOne(name: string) {
         return this.dTOMetadataStorage.getDTOMetadata(name);
     }
 
-    async find() {
+    find() {
         return this.dTOMetadataStorage.getAllDTOMetadata();
     }
 }
